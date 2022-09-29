@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat',sans-serif;
+}
+a{
+    text-decoration: none;
+   
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hi Section */
+#hi{
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-position: top center;
+    background: relative;
+    z-index: 1;
+}
+
+#hi::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hi .hi {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hi h1{
+  display: block;
+  width: fit-content;
+font-size: 4rem;
+position: relative;
+text-shadow: 0 0 3px crimson;
+
+}
+#hi .cta{
+    display: inline-block;
+    padding: 10px 30px ;
+    color: black;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#hi .cta:hover {
+    color: white;
+    background-color: crimson;
+}
+div ul{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 80px;
+    text-shadow: 0 0 3px crimson;
+
+    
+}
