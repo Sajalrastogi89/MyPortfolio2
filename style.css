@@ -7,6 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat',sans-serif;
+    background-color: #b8a994;
 }
 a{
     text-decoration: none;
@@ -19,8 +20,18 @@ a{
     align-items: center;
     justify-content: center;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+    p{
+        color:white;
+        text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
 
-/* hi Section */
 #hi{
     background-image: url(./img/image.png);
     background-size: cover;
@@ -51,7 +62,8 @@ a{
   width: fit-content;
 font-size: 4rem;
 position: relative;
-text-shadow: 0 0 3px crimson;
+color: white;
+  text-shadow: 2px 2px 4px #000000;
 
 }
 #hi .cta{
@@ -72,12 +84,81 @@ text-shadow: 0 0 3px crimson;
     color: white;
     background-color: crimson;
 }
-div ul{
+ ul{
     font-size: 20px;
     font-style: italic;
     font-weight: 600;
-    margin-top: 80px;
-    text-shadow: 0 0 3px crimson;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 
     
+}
+
+
+#services .services{
+flex-direction: column;
+text-align: center;
+max-width: 1500px;
+margin: 0 auto;
+padding: 100px 0;;
+}
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#services .section-title span {
+    color: crimson;
+}
+#services .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+#services .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./img/card.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+  z-index: -1;
+}
+#services .service-bottom  .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#services .service-item h2{
+    font-size: 2rem;
+    color:white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
