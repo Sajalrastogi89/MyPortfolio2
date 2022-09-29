@@ -25,11 +25,29 @@ img{
     width: 100%;
     object-fit: cover;
     }
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     p{
         color:white;
         text-align: left;
         font-size: 1.4rem;
         line-height: 1.9rem;
+    }
+ .section-title{
+        font-size: 4rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        text-align: center;
+    }
+    
+    .section-title span {
+        color: crimson;
     }
 
 #hi{
@@ -103,19 +121,7 @@ max-width: 1500px;
 margin: 0 auto;
 padding: 100px 0;;
 }
-#services .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
 
-#services .section-title span {
-    color: crimson;
-}
 #services .service-bottom{
     display: flex;
     align-items: center;
@@ -161,4 +167,55 @@ background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color:white;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+
+}
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#projects .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
 }
