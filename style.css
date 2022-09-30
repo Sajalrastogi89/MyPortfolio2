@@ -9,10 +9,15 @@ html{
     font-family: 'Montserrat',sans-serif;
     background-color: #b8a994;
 }
+
+
+
 a{
     text-decoration: none;
    
 }
+
+
 .container{
     min-height: 100vh;
     width: 100%;
@@ -261,6 +266,81 @@ background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     width: 50px;
     margin: 0 5px;
 }
+.xyz{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #bbb0a2;
+    
+}
+.xyz header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #f5ece0;
+    box-shadow: 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+
+
+
+
+
+.xyz header .logo{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #333;
+    
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.xyz header .navbar ul{
+    list-style: none;
+    align-items: center;
+    
+} 
+.xyz header .navbar ul li{
+   position: relative;
+    float: left;
+    
+    
+}
+.xyz header .navbar ul li a{
+font-size: 20px;
+padding: 10px;
+
+display: block;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+font-size: 25px;
+font-weight: 800;
+cursor: pointer;    
+display: none;
+}
+
+
+
+
+
 @media only screen and (min-width:768px){
     .cta{
         font-size: 2.5rem;
@@ -283,8 +363,32 @@ background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 border-spacing: 10px;
 margin: 20px;
 
-} 
+}
 
+}
 
+@media(max-width:991px) {
 
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left:0; right:0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+#menu-bar:checked ~ .navbar {
+    display: initial;
+}   
+    
 }
